@@ -1,0 +1,11 @@
+---
+const allPosts = await Astro.glob('../pages/posts/*.md');
+---
+  <ul>
+    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a> - <em>{post.frontmatter.date}</em></li>)}
+  </ul>
+  <style>
+    ul li a {
+      color: lightseagreen;
+    }
+  </style>

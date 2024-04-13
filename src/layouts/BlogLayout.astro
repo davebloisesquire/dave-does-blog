@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header.astro'
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+        <Header />
+        <article>
+            <h1>{frontmatter.title}</h1>
+            <div>{frontmatter.date} - <b>{frontmatter.author}</b></div>
+            <hr>
+            <slot />
+        </article>
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+		background-size: 224px;
+        color: rgb(168, 180, 192);
+        background-color: #081312;
+	}
+    article {
+        max-width: 700px;
+        margin: auto;
+    }
+</style>

@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PostLinks from '../components/PostLinks.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h3>Dave does blog</h3>
+		<hr>
+		<p>This is little more than a place for me to talk about things that I'm interested in.</p>
+		<br>
+		<h3>Posts</h3>
+		<hr>
+		<PostLinks />
+	</main>
+</Layout>
+
+<style>
+	main {
+		max-width: 700px;
+		margin: auto;
+	}
+</style>

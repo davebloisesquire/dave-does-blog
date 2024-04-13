@@ -1,0 +1,54 @@
+<h1 class="main-masthead">Dave does blog</h1>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Posts</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/">Contact</a></li>
+    </ul>
+</nav>
+<style>
+    @font-face {
+        font-family: play-with-fire;
+        src: url(../../fonts/PlayWithFire.ttf);
+    }
+    h1.main-masthead {
+        font-family: play-with-fire;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    nav {
+		border: 1px darkslategray solid;
+		border-radius: 5px;
+        margin: auto 1rem;
+	}
+	nav ul {
+		list-style-type: none;
+		padding-inline-start: unset;
+		display: flex;
+		justify-content: center;
+		margin-block-start: unset;
+		margin-block-end: unset;
+		padding: .5rem;
+	}
+	nav ul li {
+		display:inline-flex;
+	}
+    nav ul li a {
+        border: 1px lightslategrey solid;
+        border-radius: 3px;
+        padding: .25rem .75rem;
+		margin: auto 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: lightslategray;
+        font-weight: bold;
+        background-color: rgb(29, 48, 48);
+    }
+    nav ul li a:hover {
+        transition: all 500ms;
+        color: #081312;
+        background-color: lightslategrey;
+    }
+</style>
