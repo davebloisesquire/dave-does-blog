@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://davebloisesquire.github.io',
+    // site: 'https://davebloisesquire.github.io',
+    site: 'https://davedoesblog.com',
     base: 'dave-does-blog'
 });
