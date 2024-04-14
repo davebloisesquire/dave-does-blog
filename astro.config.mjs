@@ -4,5 +4,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     // site: 'https://davebloisesquire.github.io',
     site: 'https://davedoesblog.com',
-    base: 'dave-does-blog'
+    // base: 'dave-does-blog'
 });
