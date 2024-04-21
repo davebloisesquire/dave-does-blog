@@ -1,12 +1,29 @@
-<h1 class="main-masthead">Dave does blog</h1>
-<nav>
+---
+import MenuIcon from "./MenuIcon.astro";
+import ExitIcon from "./ExitIcon.astro";
+---
+
+<div class="masthead-bar">
+    <h1 class="main-masthead">Dave does blog</h1>
+    <div id="mobile-menu-toggle"><MenuIcon/></div>
+</div>
+<nav id="navbar">
     <ul>
+        <div id="mobile-menu-exit"><ExitIcon/></div>
         <li><a href="/">Home</a></li>
         <li><a href="/">Posts</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/">Contact</a></li>
     </ul>
 </nav>
+<script>
+    document.getElementById("mobile-menu-toggle").addEventListener("click", menuToggle)
+    document.getElementById("mobile-menu-exit").addEventListener("click", menuToggle)
+
+    function menuToggle() {
+        document.getElementById("navbar").classList.toggle("active");
+    }
+</script>
 <style>
     @font-face {
         font-family: play-with-fire;
@@ -50,5 +67,83 @@
         transition: all 500ms;
         color: #081312;
         background-color: lightslategrey;
+    }
+    .masthead-bar #mobile-menu-toggle {
+        display: none;
+    }
+
+    #mobile-menu-exit {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .masthead-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .masthead-bar h1.main-masthead  {
+        font-size: 2rem;
+        }
+        .masthead-bar #mobile-menu-toggle {
+        display: block;
+        }
+
+        nav {
+            border: unset;
+            border-radius: unset;
+            margin: auto;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(20, 20, 20, 0);
+            backdrop-filter: blur(0px);
+            transform: translateX(100%);
+        }
+
+        nav.active {
+            transition: backdrop-filter 1000ms cubic-bezier(0.4, 0, 0.2, 1), background 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(0%);
+            backdrop-filter: blur(10px);
+            background: rgba(10, 20, 20, .9);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-inline-start: unset;
+            display: block;
+            margin-block-start: unset;
+            margin-block-end: unset;
+            padding: .5rem;
+            text-align: right;
+            transform: translateX(100%);
+        }
+        nav.active ul {
+            transform: translateX(0);
+            transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        nav ul li {
+            display: block;
+            border: none;
+            background: none;
+            padding: 1rem .25rem;
+        }
+        nav ul li a {
+            background: none;
+            border: none;
+            font-size: 1.75rem;
+            text-transform: capitalize;
+        }
+        #mobile-menu-exit {
+            display: block;
+            text-align: end;
+            padding: 1rem;
+        }
+        #mobile-menu-exit span {
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+        }
     }
 </style>

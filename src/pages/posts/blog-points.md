@@ -18,3 +18,4 @@ I'm a voracious nerd. (I looked up voracious to make sure I was using it correct
 
 I dig scifi novels. I'm particularly obsessed with Neal Stephenson to the point where I feel like one rough week at work and I'd start stalking him.
 ## Why the blog?
+It's
