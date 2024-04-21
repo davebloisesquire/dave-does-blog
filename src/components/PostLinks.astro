@@ -1,11 +1,23 @@
 ---
 const allPosts = await Astro.glob('../pages/posts/*.md');
+const sortedPosts = allPosts.sort((a, b) => {
+  const dateA = new Date(a.frontmatter.date).getTime();
+  const dateB = new Date(b.frontmatter.date).getTime();
+  return dateB - dateA; // Sort in descending order, change to dateA - dateB for ascending
+})
 ---
   <ul>
-    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a> - <em>{post.frontmatter.date}</em></li>)}
+    <!-- {sortedPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a> - <em>{post.frontmatter.date}</em></li>)} -->
+    {sortedPosts.map((post) => <li><em>{post.frontmatter.date}</em> - <a href={post.url}>{post.frontmatter.title}</a></li>)}
+
   </ul>
   <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
     ul li a {
       color: lightseagreen;
+
     }
   </style>

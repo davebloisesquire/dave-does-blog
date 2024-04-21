@@ -3,7 +3,7 @@ layout: ../../layouts/BlogLayout.astro
 title: How this blog should work.
 author: Dave Blois
 description: A description of the reasoning and thoughts behind the blog
-date: 2024/03/24
+date: 2024/01/25
 ---
 Let me give you a quick introduction of myself.
 

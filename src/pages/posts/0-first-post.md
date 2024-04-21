@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: First Blog
+title: First Post
 author: Dave Blois
 description: What is this thing?
-date: 2024/03/24
+date: 2023/03/24
 ---
-This is a thing about dave being here.
+This is just the first test post. There's nothing to see here.
