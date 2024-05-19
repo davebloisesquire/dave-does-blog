@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: How this blog should work.
-author: Dave Blois
+author: Dave B
 description: A description of the reasoning and thoughts behind the blog
 date: 2024/01/25
 ---
@@ -17,5 +17,14 @@ I studied film in college. I spent my whole career since then working as a Web D
 I'm a voracious nerd. (I looked up voracious to make sure I was using it correctly here. I am but it's a bit of a stretch). I love the Star Treks, the Star Wars (up until recently, that it, I love watching Disney beat the things I like to death as much as the next guy, but I think I'm finally just kind of done with new Star Wars stuff.).
 
 I dig scifi novels. I'm particularly obsessed with Neal Stephenson to the point where I feel like one rough week at work and I'd start stalking him.
+
 ## Why the blog?
-It's
+It's an outlet for me to be creative and think critically. It's not specifically for anyone other than myself.
+
+I sometimes feel like not doing creative things will cause brain atrophy.
+
+So here I am. Writing stuff about history, computer science, film, literature and music.
+
+I'm going to try for a post a week, but who knows how that will go.
+
+Thanks for reading.

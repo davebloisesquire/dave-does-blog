@@ -1,0 +1,38 @@
+---
+layout: ../../layouts/BlogLayout.astro
+title: Site Design Prinicples.
+author: Dave B
+description: Basic rules and guidelines for what I want from a blog
+date: 2024/05/19
+---
+
+What do I want from a website? From a blog site at anyrate.
+
+Let's talk tech. The logistics of the site.
+
+1. Fast. I want this to load quickly and painlessly.
+2. Simple. For the love of god, keep it simple. I don't want to have to do a ton of work or maintainence on the backend once I've set things up. (No wordpress, drupal, or anything like that)
+3. Fairly bullet proof. I'm trying to avoid a lot of JS and having all my work wiped out by me accidentally deleting a db.
+4. Handmade. I would like to be able to write the whole thing from scratchand explain how things work if pressed.
+5. A little bit automated. I would like to avoid having to rewrite lots of code. I don't want to copy my header and footer onto every content page that I write.  
+4. No tracking. I don't like reading through or gathering analytics, let alone I don't like being tracked myself. So I'd just like to avoid any of that.
+5. No ads. I just don't like them. They ruin a reading experience. (I reserve the right to go back on this one if there seems to be an actual possibility of me making real money off of this site. It's not likely, but I'm not above selling out.)
+6. No comments. I've seen comment sections get quite bleek, and I'd like to avoid that.
+
+So this leads me to Astro with Markdown files hosted on github. It was an easy build and will be free and easy to maintain as long as github allows for Actions.
+---
+Now let's talk content.
+
+I want a variety of things that I'm interested in.
+
+1. Comp Sci and Web Dev
+2. History
+3. Arts (Music, Movies, Books etc.)
+
+We could break those down further, but I like the idea of a blog where one day you see a post on how HTML class structure should be used to improve CSS workflows and then you see a post on the best Gen X Dad Rock bands starting with the letter W, and then you see a post about how the belief in Vampires had an effect on the Hapsburg Dynasty's hold on Balkan States. 
+
+Doesn't that sound fun?
+
+Anyways, that's what I'm aiming for here.
+
+Thanks for reading.
